@@ -34,10 +34,10 @@ debopam_permission_blocker = "0.4"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
-kotlin-stdlib-jdk7 = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk7", version.ref = "kotlin-stdlib-jdk7" }
+kotlin-stdlib-jdk7 = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib-jdk7", version.ref = "kotlin-stdlib-jdk7" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
-picasso = { module = "com.squareup.picasso:picasso", version.ref = "picasso" }
+picasso = { group = "com.squareup.picasso", name = "picasso", version.ref = "picasso" }
 sdp = { group = "com.intuit.sdp", name = "sdp-android", version.ref = "sdp" }
 
 # Firebase BOM
