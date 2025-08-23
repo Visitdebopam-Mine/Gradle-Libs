@@ -1,0 +1,70 @@
+[versions]
+# PRIMARY
+agp = "8.12.1"
+agp-sdk35 = "8.6.0"
+jetbrains-kotlin = "2.2.10"
+coreKtx = "1.17.0"
+kotlin-stdlib-jdk7 = "2.2.0"
+google_services = "4.4.3"
+google_crashlytics = "3.0.6"
+
+# Support Libraries
+appcompat = "1.7.1"
+material = "1.12.0"
+picasso = "2.71828"
+sdp = "1.1.1"
+firebase = "34.1.0"
+glide = "4.16.0"
+lottie = "6.6.7"
+gson = "2.13.1"
+circle_imageview = "3.1.0"
+room = "2.7.2"
+swipe_refresh = "1.1.0"
+
+# My Libraries
+debopam_progress_dialog = "0.7"
+debopam_photo_picker = "1.2"
+debopam_alertbox = "0.12"
+debopam_retrofit = "0.11"
+debopam_user_info = "0.4"
+debopam_razorpay = "1.7"
+debopam_permission_blocker = "0.4"
+
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+kotlin-stdlib-jdk7 = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk7", version.ref = "kotlin-stdlib-jdk7" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+picasso = { module = "com.squareup.picasso:picasso", version.ref = "picasso" }
+sdp = { group = "com.intuit.sdp", name = "sdp-android", version.ref = "sdp" }
+firebase = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebase" }
+firebase_crashlytics = { group = "com.google.firebase", name = "firebase-crashlytics" }
+firebase_messaging = { group = "com.google.firebase", name = "firebase-messaging" }
+firebase_analytics = { group = "com.google.firebase", name = "firebase-analytics" }
+firebase_firestore = { group = "com.google.firebase", name = "firebase-firestore" }
+swipe_refresh = { group = "androidx.swiperefreshlayout", name = "swiperefreshlayout", version.ref = "swipe_refresh" }
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+circle_imageview = { group = "de.hdodenhof", name = "circleimageview", version.ref = "circle_imageview" }
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+glide_compiler = { group = "com.github.bumptech.glide", name = "compiler", version.ref = "glide" }
+room = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+room_compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+lottie = { module = "com.airbnb.android:lottie", version.ref = "lottie" }
+
+# My Libraries
+debopam_progress_dialog = { group = "io.github.visitdebopam", name = "progressdialog", version.ref = "debopam_progress_dialog" }
+debopam_photo_picker = { group = "io.github.visitdebopam", name = "photopicker", version.ref = "debopam_photo_picker" }
+debopam_alertbox = { group = "io.github.visitdebopam", name = "alertbox", version.ref = "debopam_alertbox" }
+debopam_retrofit = { group = "io.github.visitdebopam", name = "retrofit", version.ref = "debopam_retrofit" }
+debopam_userinfo = { group = "io.github.visitdebopam", name = "userinfo", version.ref = "debopam_user_info" }
+debopam_razorpay = { group = "io.github.visitdebopam", name = "razorpay", version.ref = "debopam_razorpay" }
+debopam_permission_blocker = { group = "io.github.visitdebopam", name = "permissionblocker ", version.ref = "debopam_permission_blocker" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-application-sdk35 = { id = "com.android.application", version.ref = "agp-sdk35" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "jetbrains-kotlin" }
+google_services = { id = "com.google.gms.google-services", version.ref = "google_services" }
+google_crashlytics = { id = "com.google.firebase.crashlytics", version.ref = "google_crashlytics" }
