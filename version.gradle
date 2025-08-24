@@ -8,7 +8,7 @@ def BUILD_TOOLS_NAME = "36.0.0"
 
 android {
     def projectName = project.name
-    def nameSpace = "com.gradle.$projectName"
+    def nameSpace = "com.$projectName"
     namespace nameSpace
     compileSdkVersion TARGET_SDK_VERSION
 
@@ -18,7 +18,6 @@ android {
         buildToolsVersion BUILD_TOOLS_NAME
         versionCode VERSION_CODE
         versionName VERSION_NAME
-
     }
 
     compileOptions {
