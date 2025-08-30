@@ -1,10 +1,11 @@
 [versions]
 
 # PRIMARY
-agp = "8.12.1"
+agp = "8.12.2"
 agp-sdk35 = "8.6.0"
 jetbrains-kotlin = "2.2.10"
 core-ktx = "1.17.0"
+core-ktx-35 = "1.16.0"
 activity-ktx = "1.10.1"
 kotlin-stdlib-jdk7 = "2.2.10"
 google_services = "4.4.3"
@@ -15,7 +16,7 @@ appcompat = "1.7.1"
 material = "1.12.0"
 picasso = "2.71828"
 sdp = "1.1.1"
-firebase = "34.1.0"
+firebase = "34.2.0"
 glide = "4.16.0"
 lottie = "6.6.7"
 gson = "2.13.1"
@@ -34,6 +35,7 @@ debopam_permission_blocker = "0.4"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
+androidx-core-ktx-35 = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx-35" }
 kotlin-stdlib-jdk7 = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib-jdk7", version.ref = "kotlin-stdlib-jdk7" }
 androidx-activity = { group = "androidx.activity", name = "activity-ktx", version = "activity-ktx" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
