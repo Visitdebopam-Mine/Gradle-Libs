@@ -2,67 +2,54 @@
 // Downloading libs.versions.toml
 def libsToml = file("${rootDir}/gradle/libs.versions.toml")
 if (libsToml.exists()) {
-   libsToml.delete()
-    println("Downloading libs.versions.toml from GitHub...")
-    new URL("https://raw.githubusercontent.com/Visitdebopam-Mine/Gradle-Libs/main/libs.versions.toml")
-            .withInputStream { input ->
-                libsToml.withOutputStream { output ->
-                    output << input
-                }
-            }
+    libsToml.delete()
 }
+println("Downloading libs.versions.toml from GitHub...")
+new URL("https://raw.githubusercontent.com/Visitdebopam-Mine/Gradle-Libs/main/libs.versions.toml")
+        .withInputStream { input ->
+            libsToml.withOutputStream { output ->
+                output << input
+            }
+        }
 
 // Downloading gradle.properties
 def gradleProperties = file("${rootDir}/gradle.properties")
 if (gradleProperties.exists()) {
-   gradleProperties.delete()
-    println("Downloading gradle.properties from GitHub...")
-    new URL("https://raw.githubusercontent.com/Visitdebopam-Mine/Gradle-Libs/main/gradle.properties")
-            .withInputStream { input ->
-                gradleProperties.withOutputStream { output ->
-                    output << input
-                }
-            }
+    gradleProperties.delete()
 }
+println("Downloading gradle.properties from GitHub...")
+new URL("https://raw.githubusercontent.com/Visitdebopam-Mine/Gradle-Libs/main/gradle.properties")
+        .withInputStream { input ->
+            gradleProperties.withOutputStream { output ->
+                output << input
+            }
+        }
 
 // Downloading gradle-wrapper.properties
 def gradleWrapperProperties = file("${rootDir}/gradle/wrapper/gradle-wrapper.properties")
 if (gradleWrapperProperties.exists()) {
-   gradleWrapperProperties.delete()
-    println("Downloading gradle-wrapper.properties from GitHub...")
-    new URL("https://raw.githubusercontent.com/Visitdebopam-Mine/Gradle-Libs/main/gradle-wrapper.properties")
-            .withInputStream { input ->
-                gradleWrapperProperties.withOutputStream { output ->
-                    output << input
-                }
-            }
+    gradleWrapperProperties.delete()
 }
-
-// Downloading root build.gradle 36
-def buildGradle = file("${rootDir}/build.gradle")
-if (buildGradle.exists()) {
-   buildGradle.delete()
-    println("Downloading build.gradle 36 from GitHub...")
-    new URL("https://raw.githubusercontent.com/Visitdebopam-Mine/Gradle-Libs/main/root-build.gradle")
-            .withInputStream { input ->
-                buildGradle.withOutputStream { output ->
-                    output << input
-                }
+println("Downloading gradle-wrapper.properties from GitHub...")
+new URL("https://raw.githubusercontent.com/Visitdebopam-Mine/Gradle-Libs/main/gradle-wrapper.properties")
+        .withInputStream { input ->
+            gradleWrapperProperties.withOutputStream { output ->
+                output << input
             }
-}
+        }
 
 // Downloading root build.gradle 35
 def buildGradle = file("${rootDir}/build.gradle")
 if (buildGradle.exists()) {
-   buildGradle.delete()
-    println("Downloading build.gradle 35 from GitHub...")
-    new URL("https://raw.githubusercontent.com/Visitdebopam-Mine/Gradle-Libs/main/root-build.gradle35")
-            .withInputStream { input ->
-                buildGradle.withOutputStream { output ->
-                    output << input
-                }
-            }
+    buildGradle.delete()
 }
+println("Downloading build.gradle 35 from GitHub...")
+new URL("https://raw.githubusercontent.com/Visitdebopam-Mine/Gradle-Libs/main/root-build.gradle35")
+        .withInputStream { input ->
+            buildGradle.withOutputStream { output ->
+                output << input
+            }
+        }
 
 // version.gradle17-35
 // version.gradle17-36
@@ -71,26 +58,26 @@ if (buildGradle.exists()) {
 // Downloading version.gradle
 def versionGradle = file("${rootDir}/version.gradle")
 if (versionGradle.exists()) {
-   versionGradle.delete()
-    println("Downloading version.gradle from GitHub...")
-    new URL("https://raw.githubusercontent.com/Visitdebopam-Mine/Gradle-Libs/main/version.gradle17-36")
-            .withInputStream { input ->
-                versionGradle.withOutputStream { output ->
-                    output << input
-                }
-            }
+    versionGradle.delete()
 }
+println("Downloading version.gradle from GitHub...")
+new URL("https://raw.githubusercontent.com/Visitdebopam-Mine/Gradle-Libs/main/version.gradle21-35")
+        .withInputStream { input ->
+            versionGradle.withOutputStream { output ->
+                output << input
+            }
+        }
 
 // Downloading gitignore
 def gitignore = file("${rootDir}/.gitignore")
 if (gitignore.exists()) {
-   gitignore.delete()
-    println("Downloading .gitignore from GitHub...")
-    new URL("https://raw.githubusercontent.com/Visitdebopam-Mine/Gradle-Libs/main/git.ignore")
-            .withInputStream { input ->
-                gitignore.withOutputStream { output ->
-                    output << input
-                }
-            }
+    gitignore.delete()
 }
+println("Downloading .gitignore from GitHub...")
+new URL("https://raw.githubusercontent.com/Visitdebopam-Mine/Gradle-Libs/main/git.ignore")
+        .withInputStream { input ->
+            gitignore.withOutputStream { output ->
+                output << input
+            }
+        }
 // End of script
