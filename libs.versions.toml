@@ -10,6 +10,10 @@ activity-ktx = "1.10.1"
 kotlin-stdlib-jdk7 = "2.2.10"
 google_services = "4.4.3"
 google_crashlytics = "3.0.6"
+ksp = "2.2.10-2.0.2"
+
+# Play Services
+play-services-location = "21.3.0"
 
 # Support Libraries
 appcompat = "1.7.1"
@@ -43,6 +47,9 @@ material = { group = "com.google.android.material", name = "material", version.r
 picasso = { group = "com.squareup.picasso", name = "picasso", version.ref = "picasso" }
 sdp = { group = "com.intuit.sdp", name = "sdp-android", version.ref = "sdp" }
 
+# Play Services
+play-services-location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "play-services-location" }
+
 # Firebase BOM
 firebase-bom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebase" }
 firebase-crashlytics = { group = "com.google.firebase", name = "firebase-crashlytics" }
@@ -75,3 +82,4 @@ android-library = { id = "com.android.library", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "jetbrains-kotlin" }
 google-services = { id = "com.google.gms.google-services", version.ref = "google_services" }
 google-crashlytics = { id = "com.google.firebase.crashlytics", version.ref = "google_crashlytics" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
