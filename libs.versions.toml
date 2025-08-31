@@ -35,7 +35,7 @@ debopam_permission_blocker = "0.4"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
-androidx-core-ktx-35 = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx-35" }
+androidx-core-ktx35 = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx35" }
 kotlin-stdlib-jdk7 = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib-jdk7", version.ref = "kotlin-stdlib-jdk7" }
 androidx-activity = { group = "androidx.activity", name = "activity-ktx", version = "activity-ktx" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
